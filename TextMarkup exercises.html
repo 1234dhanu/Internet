@@ -1,10 +1,30 @@
-<html>
+<!DOCTYPE html> 
+<!-- File name and document purpose --> 
+<html lang = "en">   
+    <head>     
+        <title> Text Markup Exercises </title>
+        <meta charset = "utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 20px;
+            }
+            code {
+                background-color: #f4f4f4;
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-family: monospace;
+            }
+        </style>    
+    </head>
     <body>
         <p>1. Write HTML code that shows the following text.</p>
         <p><b>Theorem:</b> Every prime number (greater than 2)<em> modulo</em> 4 can be written in the form<em> 4n + 1</em> or<em> 4n + 3.</em></p>
         <p><b>Proof:</b> Any number p when divided by 4 leaves remainder 0, 1, 2 or 3. Therefore, the number has the form<em> 4n, 4n + 1, 4n + 2 or 4n + 3.</em> Since<em> 4n </em>and <em> 4n + 2</em> are<br><strong>even,</strong> so these can not be a form of a prime number which is an<strong> odd</strong> number (except 2). This proves the theorem. &#9744;</p>
         <hr/>
-        <p>2. Write HTML code that shows the following text:</p>
+<p>2. Write HTML code that shows the following text:</p>
         <p>e<sup>&#617&#952</sup> = cos&#952 + &#617sin&#952</p>
         <p><sup>n</sup>C<sub>r</sub> = <sup>n!</sup>/<sub>(n-r)!r!</sub> is equal to the number of ways of selecting r items from n <i>distinct</i> items.</p>
 <hr/>
@@ -29,30 +49,15 @@
         console.log(sum(3 + 4));//prints 7</pre>
         </code>
 <hr/>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solving Equations in Two Variables with Python</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: monospace;
-        }
-    </style>
-</head>
-<body>
-
     <h1>Solving Equations in Two Variables with Python</h1>
-
+    <p>An equation is said to be linear equation in two variables if it is written in the form of ax + by + c=0, where a, b & c are real numbers and the coefficients of x and y,<br> i.e a and b respectively, are not equal to zero.<br>
+    
+    For example, 10x+4y = 3 and -x+5y = 2 are linear equations in two variables.
+    The solution for such an equation is a pair of values, one for x and one for y which<br> further makes the two sides of an equation equal.</p>
+    
+    <p>The solution of linear equations in two variables, ax+by = c, is a particular point in the graph, such that when x-coordinate is<br> multiplied by a and y-coordinate is multiplied by b, then the sum of these two values will be equal to c. 
+    Basically, for linear equation in two variables,<br> there are infinitely many solutions.</p>
+    
     <p>Understanding how to solve equations in two variables is an important skill in algebra. Let's go through the process step by step and then implement a simple Python program to solve such equations.</p>
 
     <h2>Step-by-Step Guide:</h2>
@@ -72,25 +77,31 @@
     <p>Consider the following system of equations:</p>
 
     <p class="equation">
-        \(2x + 3y = 8\)<br>
-        \(4x - 2y = 6\)
+        <em>(2x + y = 5)<br>
+        (3x - 2y = 8)</em>
     </p>
 
-    <p>Choose the first equation and solve for \(x\):</p>
+    <p>Choose the first equation and solve for y:</p>
 
     <p class="equation">
-        \(2x = 8 - 3y\)<br>
-        \(x = 4 - \frac{3}{2}y\)
+        <em>(2x + y = 5)<br>
+        (y = 5 - 2x)</em>
     </p>
 
-    <p>Substitute \(x = 4 - \frac{3}{2}y\) into the second equation:</p>
+    <p>Substitute <em>(y = 5 - 2x)</em> into the second equation:</p>
 
     <p class="equation">
-        \(4(4 - \frac{3}{2}y) - 2y = 6\)
+        <em>((3x - 2(5 - 2x)) = 8)</em>
     </p>
 
-    <p>Solving the resulting equation gives \(y = 2\). Substitute \(y = 2\) back into the first equation to find \(x = 1\).</p>
+    <p>Solving for x gives <em>(x = 2)</em>. Substitute <em>(x = 2)</em> back into the expression for y: <em>(x = 1).</em></p>
 
+    <p class="equation">
+        <em>(2(2) + y = 5)</em>
+    </p>
+
+    <p>Solving for y, we get <em>(y = 1).</em> So, the solution to the system is <em>(x = 2)</em> and <em>(y = 1).</em></p>
+    
     <h2>Python Program:</h2>
 
     <p>Now, let's implement a Python program that solves equations in two variables:</p>
@@ -98,20 +109,20 @@
     <pre>
         <code class="python">
             # Coefficients
-            a1, b1, c1 = 2, 3, 8
-            a2, b2, c2 = 4, -2, 6
+            a1, b1, c1 = 2, 1, 5
+            a2, b2, c2 = 3, -2, 8
 
-            # Solve for x in terms of y
-            x_in_terms_of_y = (c1 - b1 * y) / a1
+            # Solve for y in terms of x
+            y_in_terms_of_x = c1 - a1 * x
 
-            # Substitute x_in_terms_of_y into the second equation
-            equation = a2 * x_in_terms_of_y + b2 * y - c2
+            # Substitute y_in_terms_of_x into the second equation
+            equation = a2 * x + b2 * y_in_terms_of_x - c2
 
-            # Solve the resulting equation for y
-            solution_y = equation / 2
+            # Solve the resulting equation for x
+            solution_x = equation / (a2 + b2)
 
-            # Substitute y back into the first equation to find x
-            solution_x = (c1 - b1 * solution_y) / a1
+            # Substitute x back into y_in_terms_of_x to find y
+            solution_y = y_in_terms_of_x.subs(x, solution_x)
 
             # Verify the solution by checking it in both equations
             check1 = a1 * solution_x + b1 * solution_y == c1
@@ -123,8 +134,5 @@
     </pre>
 
     <p>This Python program is a basic example. In real-world scenarios, consider using specialized libraries or more robust methods for solving equations.</p>
-
-</body>
-</html>
 </body>
 </html>
