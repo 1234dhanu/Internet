@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian States and Cities</title>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #d3bcd1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        select {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label for="stateSelect">Select a State:</label>
+    <select id="stateSelect" name="state">
+        <optgroup label="Maharashtra">
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+            <option value="nagpur">Nagpur</option>
+        </optgroup>
+        
+        <optgroup label="Karnataka">
+            <option value="bangalore">Bangalore</option>
+            <option value="mysuru">Mysuru</option>
+            <option value="mangalore">Mangalore</option>
+        </optgroup>
+
+        <optgroup label="Tamil Nadu">
+            <option value="chennai">Chennai</option>
+            <option value="coimbatore">Coimbatore</option>
+            <option value="madurai">Madurai</option>
+        </optgroup>
+
+        <optgroup label="Rajasthan">
+            <option value="jaipur">Jaipur</option>
+            <option value="jodhpur">Jodhpur</option>
+            <option value="udaipur">Udaipur</option>
+        </optgroup>
+
+        <optgroup label="West Bengal">
+            <option value="kolkata">Kolkata</option>
+            <option value="howrah">Howrah</option>
+            <option value="durgapur">Durgapur</option>
+        </optgroup>
+    </select>
+
+</body>
+</html>
