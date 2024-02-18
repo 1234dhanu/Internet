@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #a3dbc4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #cec498;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="flightBookingForm" action="/search-flights" method="post">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+
+        <label for="dateOfJourney">Date of Journey:</label>
+        <input type="date" id="dateOfJourney" name="dateOfJourney" required>
+
+        <label for="roundTrip">Round Trip:</label>
+        <input type="checkbox" id="roundTrip" name="roundTrip">
+        
+        <label for="dateOfReturn">Date of Return:</label>
+        <input type="date" id="dateOfReturn" name="dateOfReturn">
+
+        <button type="submit">Find Available Flights</button>
+    </form>
+
+</body>
+</html>
