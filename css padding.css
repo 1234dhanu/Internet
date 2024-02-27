@@ -1,0 +1,24 @@
+.border {
+    border: 1px solid red;
+}
+.borderBlue {
+    border: 1px solid blue;
+}
+.row1, .row2, .row3 {
+    padding-bottom: 20px;
+}
+.paddingRight {
+    padding-right: 10px;
+}
+.paddingLeft {
+    padding-left: 20px;
+}
+.paddingTop {
+    padding-top: 30px;
+}
+.paddingBottom {
+    padding-Bottom: 40px;
+}
+.padding {
+    padding: 10px 20px;
+}
