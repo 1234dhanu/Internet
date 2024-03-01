@@ -1,0 +1,14 @@
+.container {
+    border: 2px solid red; /* Red border */
+    height: 100px; /* Example height */
+    width: 200px; /* Example width */
+    position: relative; /* To position the span absolutely inside it */
+    box-sizing: border-box; /* To include padding and border in the element's total width and height */
+}
+.top-right {
+    position: absolute; /* Absolute position */
+    top: 0; /* At the top of the container */
+    right: 0; /* At the right of the container */
+    padding: 5px; /* Padding around the text */
+    background-color: white; /* Optional: to make it stand out */
+}
