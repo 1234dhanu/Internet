@@ -1,0 +1,113 @@
+.containerG {
+    height: 250px;
+    width: 50%;
+    border: 1px solid gray;
+    padding: 0.5em;
+    display: grid;
+    grid-template-areas: 
+        "oneG oneG twoG twoG threeG"
+        "oneG oneG twoG twoG threeG"
+        "oneG oneG fourG fourG fourG"
+        "fiveG sixG fourG fourG fourG"
+        "fiveG sevenG sevenG sevenG sevenG";
+    gap: 1em;
+}
+
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell {
+    border: 1px solid teal;
+}
+
+.oneG {
+    grid-area: oneG;
+}
+
+.twoG {
+    grid-area: twoG;
+}
+
+.threeG {
+    grid-area: threeG;
+}
+
+.fourG {
+    grid-area: fourG;
+}
+
+.fiveG {
+    grid-area: fiveG;
+}
+
+.sixG {
+    grid-area: sixG;
+}
+
+.sevenG {
+    grid-area: sevenG;
+}
+
+
+
+
+
+.containerG {
+    height: 250px;
+    width: 50%;
+    border: 1px solid gray;
+    padding: 0.5em;
+    display: grid;
+    grid-template-areas: 
+        "oneG oneG twoG threeG threeG"
+        "oneG oneG fourG threeG threeG"
+        "fiveG fiveG fourG sixG sevenG"
+        "fiveG fiveG fourG sixG sevenG"
+        "fiveG fiveG fourG sixG eightG";
+    gap: 1em;
+}
+
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell {
+    border: 1px solid teal;
+}
+
+.oneG {
+    grid-area: oneG;
+}
+
+.twoG {
+    grid-area: twoG;
+}
+
+.threeG {
+    grid-area: threeG;
+}
+
+.fourG {
+    grid-area: fourG;
+}
+
+.fiveG {
+    grid-area: fiveG;
+}
+
+.sixG {
+    grid-area: sixG;
+}
+
+.sevenG {
+    grid-area: sevenG;
+}
+
+.sevenG {
+    grid-area: sevenG;
+}
