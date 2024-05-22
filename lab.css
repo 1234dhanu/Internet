@@ -1,0 +1,47 @@
+.problem1 span {
+    border: 2px solid red;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+.center {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 1px solid;
+}
+
+.first {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 20%;
+}
+.second {
+    position: absolute;
+    left: calc(30% - 50px);
+    top: 54%;
+}
+.third {
+    position: absolute;
+    left: calc(70% - 50px);
+    top: 54%;
+}
