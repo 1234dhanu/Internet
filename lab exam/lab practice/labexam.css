@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    border: 1px solid rgb(59, 12, 230);
+    height: 100px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cbox {
+    border: 1px solid rgb(7, 7, 7);
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    align-items: solid red;
+    justify-content: center;
+}
